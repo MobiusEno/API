@@ -33,7 +33,7 @@ namespace Cost_Management.Models
 
             [DisplayName("*群序號:")]
             [Required(ErrorMessage = "請輸入群序號")]
-            public double circleID { get; set; }
+            public string circleID { get; set; }
 
             [DisplayName("*費用說明:")]
             [Required(ErrorMessage = "請輸入費用說明")]
@@ -120,12 +120,6 @@ namespace Cost_Management.Models
 
             [DisplayName("單子狀態:")]
             public bool SignStatus { get; set; }
-
-            //db更新時手動加入
-            [DisplayName("單據圖片:")]
-            public HttpPostedFileBase ItemImage0 { get; set; }
-            public HttpPostedFileBase ItemImage1 { get; set; }
-            public HttpPostedFileBase ItemImage2 { get; set; }
 
         }
 

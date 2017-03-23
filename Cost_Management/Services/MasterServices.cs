@@ -48,7 +48,7 @@ namespace Cost_Management.Services
             {
                 status += "\nCircleID為必填";
             }
-            NewData.circleID = Int32.Parse(value.CircleID);
+            NewData.circleID = value.CircleID;
 
             if (value.FormDescription == "")
             {
@@ -225,7 +225,7 @@ namespace Cost_Management.Services
                     NewData.note = note_1.SubData[0].Content;
                     NewData.formNumber = "0";
                     NewData.RequireNumber = "0";
-                    NewData.circleID = 0;//Int32.Parse(value.CircleID.ToString()); 
+                    NewData.circleID = "0";
                     NewData.formName = value.FormName;
                     NewData.formID = "0";//value.FormID;
                     NewData.nation = "0";

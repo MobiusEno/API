@@ -6,7 +6,7 @@
 //     如果重新產生程式碼，將會覆寫對這個檔案的手動變更。
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System.Web;
+
 namespace Cost_Management.Models
 {
     using System;
@@ -19,7 +19,7 @@ namespace Cost_Management.Models
         public string formName { get; set; }
         public string formNumber { get; set; }
         public string RequireNumber { get; set; }
-        public double circleID { get; set; }
+        public string circleID { get; set; }
         public string description { get; set; }
         public string nation { get; set; }
         public string exp_date { get; set; }
@@ -50,9 +50,6 @@ namespace Cost_Management.Models
         public string form_id { get; set; }
         public string channel_id { get; set; }
         public string create_time { get; set; }
-        public HttpPostedFileBase ItemImage0 { get; set; }
-        public HttpPostedFileBase ItemImage1 { get; set; }
-        public HttpPostedFileBase ItemImage2 { get; set; }
-
+       
     }
 }
